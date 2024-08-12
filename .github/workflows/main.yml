@@ -3,7 +3,7 @@ name: HTTP Request Scheduler
 on:
   workflow_dispatch:
   schedule:
-    - cron: "*/1 * * * *" 
+    - cron: "*/1 * * * *" # Runs every minute
 jobs:
   make-http-request:
     runs-on: ubuntu-latest
