@@ -2,7 +2,7 @@ name: HTTP Request Scheduler
 
 on:
   schedule:
-    cron: "*/1 * * * *"
+    - cron: "*/1 * * * *"
 jobs:
   make-http-request:
     runs-on: ubuntu-latest
