@@ -1,9 +1,9 @@
 name: HTTP Request Scheduler
 
 on:
-  schedule:
-    # Run at 5 specific times (e.g., 00:00, 02:00, 04:00, 06:00, 08:00)
-    - cron: '42 16 * * *'
+  # Triggers the workflow on push or pull request events but only for the main branch
+  push:
+    branches: [ main ]
 jobs:
   make-http-request:
     runs-on: ubuntu-latest
