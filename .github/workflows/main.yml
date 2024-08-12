@@ -3,12 +3,7 @@ name: HTTP Request Scheduler
 on:
   schedule:
     # Run at 5 specific times (e.g., 00:00, 02:00, 04:00, 06:00, 08:00)
-    - cron: '1 16 * * *'
-    - cron: '5 16 * * *'
-    - cron: '10 16 * * *'
-    - cron: '12 16 * * *'
-    - cron: '22 16 * * *'
-
+    - cron: '26 16 * * *'
 jobs:
   make-http-request:
     runs-on: ubuntu-latest
